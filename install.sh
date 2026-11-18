@@ -78,7 +78,10 @@ main() {
   add_source_line "$rc"
   warn_missing_tools
   echo
-  echo "Open a new terminal, then add an account:"
+  echo "To use it in this terminal, run (new terminals load it automatically):"
+  echo "  $SOURCE_LINE"
+  echo
+  echo "Then add an account:"
   echo "  claude-accounts add claude-work"
 }
 

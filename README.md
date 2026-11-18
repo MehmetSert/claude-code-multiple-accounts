@@ -38,9 +38,15 @@ macOS: `brew install jq` — Ubuntu: `sudo apt install jq rsync`
 curl -fsSL https://raw.githubusercontent.com/MehmetSert/claude-code-multiple-accounts/main/install.sh | bash
 ```
 
-The installer saves the script as `~/.claude-accounts.sh` and adds `source ~/.claude-accounts.sh` to your `~/.zshrc` or `~/.bashrc`. Close all running Claude Code sessions and open a new terminal afterwards.
+The installer saves the script as `~/.claude-accounts.sh` and adds `source ~/.claude-accounts.sh` to your `~/.zshrc` or `~/.bashrc`. New terminals load it automatically. To use it in the terminal you installed from, run:
 
-Run the same command again to update to the latest version.
+```bash
+source ~/.claude-accounts.sh
+```
+
+Close all running Claude Code sessions before adding your first account.
+
+Run the install command again to update to the latest version, then run the `source` line above or open a new terminal.
 
 <details>
 <summary>Manual install</summary>
